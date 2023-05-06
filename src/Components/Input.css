@@ -1,0 +1,39 @@
+   body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Style the TODO input field */
+        #todo-input {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            margin-right: 10px;
+            outline: none;
+            background-color: white;
+            color: black;
+        }
+
+        /* Style the Add button */
+        .submitBtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        /* Style the container div */
+       .to-do-input{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+                width: 40vw;
+                margin-bottom: 30px;
+            
+        }

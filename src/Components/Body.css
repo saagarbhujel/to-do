@@ -1,0 +1,37 @@
+.todo-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 0 0;
+    text-align: initial;
+        height: 45px;
+}
+
+.todo-data {
+  font-size: 18px;
+  margin-right: 10px;
+
+    background-color: gray;
+    /* width: 100%; */
+    width: 31vw;
+    padding: 5px 10px;
+}
+
+.deleteBtn {
+ background-color: #e0185e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+}
+
+.markBtn{
+     background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+}
