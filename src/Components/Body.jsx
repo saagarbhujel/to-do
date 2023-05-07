@@ -1,15 +1,17 @@
-import React from 'react'
+import React  from 'react'
 import "./Body.css"
 import axios from "axios";
 
+const Body = ({ name, _id,setShouldRefresh }) => {
 
-const Body = ({ name,_id }) => {
+
+
   // console.log(name);
-   console.log("name:", name);
-   console.log("_id:", _id);
+  console.log("name:", name);
+  console.log("_id:", _id);
 
   const deleteTodo = async () => {
-        console.log("deleting todo:", _id);
+    console.log("deleting todo:", _id);
 
     // DELETE request
     await axios.delete(`https://react-workshop-todo.fly.dev/todos/${_id}`, {
@@ -17,9 +19,16 @@ const Body = ({ name,_id }) => {
         apiKey: "645666987213f63d43086426",
       },
     });
+    setShouldRefresh((v) => !v);
 
-     console.log("deleted todo:", _id);
+
+
+    console.log("deleted todo:", _id);
+
   };
+
+
+
 
   return (
     <>

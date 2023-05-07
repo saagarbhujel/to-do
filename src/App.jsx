@@ -31,7 +31,14 @@ useEffect(()=>{
       <Input setShouldRefresh={setShouldRefresh} />
 
       {inputTodo.map((todos) => {
-        return <Container name={todos.title} key={todos._id} _id={todos._id} />;
+        return (
+          <Container
+            name={todos.title}
+            key={todos._id}
+            _id={todos._id}
+            setShouldRefresh={setShouldRefresh}
+          />
+        );
       })}
 
       {/* <Container name="changed"/> */}
