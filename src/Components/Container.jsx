@@ -2,13 +2,15 @@ import React from 'react'
 import Body from './Body'
 
 
-const container = ({todoContent}) => {
+const Container = ({name,_id}) => {
+  // console.log(name)
   return (
     <>
-      <Body todoContent={todoContent} />
+      <Body name={name} _id={_id} />
+    </> 
 
-    </>
+    
   );
 }
 
-export default container
+export default Container
