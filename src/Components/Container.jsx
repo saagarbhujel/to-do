@@ -1,14 +1,12 @@
 import React from 'react'
 import Body from './Body'
-import Input from './Input'
 
-const container = () => {
+
+const container = ({todoContent}) => {
   return (
     <>
-      <Body />
-      <Body />
-      <Body />
-      <Body />
+      <Body todoContent={todoContent} />
+
     </>
   );
 }
