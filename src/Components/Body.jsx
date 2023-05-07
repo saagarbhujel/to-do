@@ -7,11 +7,11 @@ const Body = ({ name, _id,setShouldRefresh }) => {
 
 
   // console.log(name);
-  console.log("name:", name);
-  console.log("_id:", _id);
+  // console.log("name:", name);
+  // console.log("_id:", _id);
 
   const deleteTodo = async () => {
-    console.log("deleting todo:", _id);
+    // console.log("deleting todo:", _id);
 
     // DELETE request
     await axios.delete(`https://react-workshop-todo.fly.dev/todos/${_id}`, {
@@ -23,7 +23,7 @@ const Body = ({ name, _id,setShouldRefresh }) => {
 
 
 
-    console.log("deleted todo:", _id);
+    // console.log("deleted todo:", _id);
 
   };
 
@@ -35,7 +35,7 @@ const Body = ({ name, _id,setShouldRefresh }) => {
       <div className="todo-list">
         <p className="todo-data">{name}</p>
         <div>
-          <button className="markBtn">+</button>
+          {/* <button className="markBtn">+</button> */}
           <button className="deleteBtn" onClick={deleteTodo}>
             -
           </button>
