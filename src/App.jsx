@@ -28,7 +28,7 @@ useEffect(()=>{
 
   return (
     <>
-    <h1>To - DO</h1>
+    <h1>To - Do</h1>
       <Input setShouldRefresh={setShouldRefresh} />
 
       {inputTodo.map((todos) => {
